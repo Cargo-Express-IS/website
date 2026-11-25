@@ -42,7 +42,8 @@
     "cta_track": "Track a shipment",
     "map_caption": "Schematic · first stops from KEF (yellow) and examples of onward destinations (blue)",
     "map_note": "These are only some of our destinations. Send us an enquiry and we'll find a way to get your cargo there.",
-    "map_note_link": "Send an enquiry"
+    "map_note_link": "Send an enquiry",
+    "region_asia": "Asia & Oceania"
   },
   "track": {
     "title": "Track & trace",
@@ -310,7 +311,7 @@
   "dhl": {
     "eyebrow": "Widebody capacity",
     "title": "Boeing 767 with DHL out of KEF",
-    "text": "We operate with DHL on a Boeing 767 widebody freighter from Keflavík. Its main deck takes larger and heavier shipments than passenger aircraft can, with onward connections through DHL's East Midlands hub to destinations such as Shanghai (PVG), New York (JFK), Brussels (BRU), Dublin (DUB), Madrid (MAD) and Dubai (DWC).",
+    "text": "We operate with DHL on a Boeing 767 widebody freighter from Keflavík. Its main deck takes larger and heavier shipments than passenger aircraft can, with onward connections through DHL's East Midlands hub to destinations such as Shanghai (PVG), New York (JFK), Newark (EWR), Montréal (YUL), Brussels (BRU), Dublin (DUB), Madrid (MAD) and Dubai (DWC).",
     "cta": "Ask about main-deck space"
   }
 }

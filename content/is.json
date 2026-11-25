@@ -42,7 +42,8 @@
     "cta_track": "Rekja sendingu",
     "map_caption": "Skýringarmynd · fyrsti viðkomustaður frá KEF (gult) og dæmi um áfangastaði þaðan (blátt)",
     "map_note": "Þetta eru aðeins nokkrir af áfangastöðum okkar. Sendu okkur fyrirspurn og við finnum leið til að koma sendingunni á leiðarenda.",
-    "map_note_link": "Senda fyrirspurn"
+    "map_note_link": "Senda fyrirspurn",
+    "region_asia": "Asía og Eyjaálfa"
   },
   "track": {
     "title": "Rakning sendinga",
@@ -310,7 +311,7 @@
   "dhl": {
     "eyebrow": "Breiðþotupláss",
     "title": "Boeing 767 með DHL frá KEF",
-    "text": "Við vinnum með DHL á Boeing 767 breiðþotu (fraktvél) frá Keflavík. Á aðalþilfari kemst stærri og þyngri frakt en í farþegavélum, og frá miðstöð DHL í East Midlands eru tengingar til áfangastaða eins og Sjanghæ (PVG), New York (JFK), Brussel (BRU), Dyflinn (DUB), Madríd (MAD) og Dúbaí (DWC).",
+    "text": "Við vinnum með DHL á Boeing 767 breiðþotu (fraktvél) frá Keflavík. Á aðalþilfari kemst stærri og þyngri frakt en í farþegavélum, og frá miðstöð DHL í East Midlands eru tengingar til áfangastaða eins og Sjanghæ (PVG), New York (JFK), Newark (EWR), Montréal (YUL), Brussel (BRU), Dyflinn (DUB), Madríd (MAD) og Dúbaí (DWC).",
     "cta": "Spyrjast fyrir um pláss á aðalþilfari"
   }
 }
