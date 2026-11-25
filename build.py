@@ -75,6 +75,7 @@ def main():
     assets = {
         "css": f"/css/site.css?v={fingerprint(STATIC / 'css' / 'site.css')}",
         "js": f"/js/track.js?v={fingerprint(STATIC / 'js' / 'track.js')}",
+        "form_js": f"/js/form.js?v={fingerprint(STATIC / 'js' / 'form.js')}",
     }
 
     # AWB prefix -> airline, only for confirmed prefixes

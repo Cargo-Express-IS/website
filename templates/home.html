@@ -16,6 +16,8 @@
         </div>
         <div class="hero__art">
           {% include "map.svg" %}
+          <p class="hero__legend" aria-hidden="true">{{ t.hero.map_caption }}</p>
+          <p class="hero__mapnote">{{ t.hero.map_note }} <a href="#quote">{{ t.hero.map_note_link }}</a></p>
         </div>
       </div>
     </section>
@@ -103,6 +105,15 @@
           </li>
           {% endfor %}
         </ul>
+        <div class="feature" aria-labelledby="dhl-title">
+          <div class="feature__icon">{{ icon('plane', 30) }}</div>
+          <div class="feature__body">
+            <p class="eyebrow">{{ t.dhl.eyebrow }}</p>
+            <h3 class="feature__title" id="dhl-title">{{ t.dhl.title }}</h3>
+            <p class="feature__text">{{ t.dhl.text }}</p>
+          </div>
+          <a class="btn btn--primary feature__cta" href="#quote">{{ t.dhl.cta }}</a>
+        </div>
         <div class="note">
           {{ icon('pin') }}
           <strong>{{ t.network.kef_title }}</strong>
@@ -129,60 +140,61 @@
         </div>
 
         {% set f = t.quote.fields %}
-        <form class="form" name="quote" method="POST" action="{{ t.paths.thanks }}"
+        <form class="form" id="quote-form" name="quote" method="POST" action="{{ t.paths.thanks }}"
               data-netlify="true" netlify-honeypot="company_website">
           <input type="hidden" name="form-name" value="quote">
-          <input type="hidden" name="language" value="{{ lang }}">
+          <input type="hidden" name="subject" id="q-subject" value="Quote request – cargoexpress.is">
+          <input type="hidden" name="Language" value="{{ t.lang_name }}">
           <p class="hp" aria-hidden="true"><label>Website <input name="company_website" tabindex="-1" autocomplete="off"></label></p>
 
           <div class="field">
             <label for="q-company">{{ f.company }} <span class="req">({{ f.required }})</span></label>
-            <input class="input" id="q-company" name="company" type="text" autocomplete="organization" required>
+            <input class="input" id="q-company" name="Company" type="text" autocomplete="organization" required>
           </div>
           <div class="field">
             <label for="q-email">{{ f.email }} <span class="req">({{ f.required }})</span></label>
-            <input class="input" id="q-email" name="email" type="email" autocomplete="email" required>
+            <input class="input" id="q-email" name="Email" type="email" autocomplete="email" required>
           </div>
           <div class="field">
             <label for="q-from">{{ f.from }}</label>
-            <input class="input" id="q-from" name="from" type="text" value="{{ f.from_default }}">
+            <input class="input" id="q-from" name="From" type="text" value="{{ f.from_default }}">
           </div>
           <div class="field">
             <label for="q-to">{{ f.to }} <span class="req">({{ f.required }})</span></label>
-            <input class="input" id="q-to" name="to" type="text" placeholder="{{ f.to_placeholder }}" required>
+            <input class="input" id="q-to" name="To" type="text" placeholder="{{ f.to_placeholder }}" required>
           </div>
           <div class="field">
             <label for="q-pieces">{{ f.pieces }}</label>
-            <input class="input" id="q-pieces" name="pieces" type="number" min="1" inputmode="numeric">
+            <input class="input" id="q-pieces" name="Pieces" type="number" min="1" inputmode="numeric">
           </div>
           <div class="field">
             <label for="q-dims">{{ f.dims }}</label>
-            <input class="input" id="q-dims" name="dimensions" type="text" placeholder="{{ f.dims_placeholder }}">
+            <input class="input" id="q-dims" name="Dimensions per piece (cm)" type="text" placeholder="{{ f.dims_placeholder }}">
           </div>
           <div class="field">
             <label for="q-weight">{{ f.weight }}</label>
-            <input class="input" id="q-weight" name="gross_weight_kg" type="number" min="0" step="any" inputmode="decimal">
+            <input class="input" id="q-weight" name="Total gross weight (kg)" type="number" min="0" step="any" inputmode="decimal">
           </div>
           <div class="field">
             <label for="q-ready">{{ f.ready }}</label>
-            <input class="input" id="q-ready" name="ready_date" type="date">
+            <input class="input" id="q-ready" name="Ready date" type="date">
           </div>
           <div class="field field--full">
             <label for="q-commodity">{{ f.commodity }}</label>
-            <input class="input" id="q-commodity" name="commodity" type="text" placeholder="{{ f.commodity_placeholder }}">
+            <input class="input" id="q-commodity" name="Commodity" type="text" placeholder="{{ f.commodity_placeholder }}">
           </div>
           <fieldset class="form__fieldset">
             <legend>{{ f.special }}</legend>
             <div class="checks">
-              <label><input type="checkbox" name="temperature_controlled" value="yes">{{ f.temp }}</label>
-              <label><input type="checkbox" name="dangerous_goods" value="yes">{{ f.dg }}</label>
-              <label><input type="checkbox" name="aog_urgent" value="yes">{{ f.aog }}</label>
-              <label><input type="checkbox" name="consolidation" value="yes">{{ f.consol }}</label>
+              <label><input type="checkbox" name="Temperature-controlled" value="Yes">{{ f.temp }}</label>
+              <label><input type="checkbox" name="Dangerous goods" value="Yes">{{ f.dg }}</label>
+              <label><input type="checkbox" name="AOG / urgent" value="Yes">{{ f.aog }}</label>
+              <label><input type="checkbox" name="Consolidation (several HAWBs)" value="Yes">{{ f.consol }}</label>
             </div>
           </fieldset>
           <div class="field field--full">
             <label for="q-message">{{ f.message }}</label>
-            <textarea class="input" id="q-message" name="message" rows="3"></textarea>
+            <textarea class="input" id="q-message" name="Message" rows="3"></textarea>
           </div>
           <div class="form__foot">
             <p class="form__small">{{ t.quote.goes_to }}. {{ t.quote.privacy_note }} <a href="{{ t.paths.privacy }}">{{ t.quote.privacy_link }}</a>.</p>
@@ -236,4 +248,5 @@
 {% block scripts %}
   <script type="application/json" id="awb-prefixes">{{ prefixes|tojson }}</script>
   <script src="{{ assets.js }}" defer></script>
+  <script src="{{ assets.form_js }}" defer></script>
 {% endblock %}

@@ -40,7 +40,9 @@
     "lede": "Six airlines out of KEF, one local team. We sell airline capacity to Icelandic forwarders and shippers, and handle AOG, temperature-controlled and project cargo.",
     "cta_quote": "Request a quote",
     "cta_track": "Track a shipment",
-    "map_caption": "Schematic · gateways from KEF, onward via each airline's network"
+    "map_caption": "Schematic · first stops from KEF (yellow) and examples of onward destinations (blue)",
+    "map_note": "These are only some of our destinations. Send us an enquiry and we'll find a way to get your cargo there.",
+    "map_note_link": "Send an enquiry"
   },
   "track": {
     "title": "Track & trace",
@@ -65,19 +67,24 @@
     "intro": "Mostly export out of KEF, plus clearance for incoming shipments.",
     "items": [
       {
-        "icon": "aog",
-        "title": "24/7 AOG",
-        "text": "We liaise with airlines, customs and handlers for the fast release of aircraft-on-ground parts, day or night."
-      },
-      {
         "icon": "temp",
         "title": "Temperature-controlled",
         "text": "Over 4,000 temperature-controlled shipments handled for our customers."
       },
       {
+        "icon": "pharma",
+        "title": "Pharma shipments",
+        "text": "Pharmaceutical shipments coordinated with airlines and handlers to keep the cold chain and timing on track."
+      },
+      {
+        "icon": "aog",
+        "title": "24/7 AOG",
+        "text": "We liaise with airlines, customs and handlers for the fast release of aircraft-on-ground parts, day or night."
+      },
+      {
         "icon": "projects",
         "title": "Cargo projects",
-        "text": "Large or time-critical projects scheduled with forwarders, whatever the size."
+        "text": "Large or time-critical projects scheduled with forwarders."
       },
       {
         "icon": "customs",
@@ -88,7 +95,7 @@
   },
   "network": {
     "title": "Our airlines out of KEF",
-    "intro": "Each airline takes cargo to its hub and onward through its own network. Schedules change by season, so ask reservations for current days and cut-offs.",
+    "intro": "Each airline takes cargo to its hub and onward through its own network, e.g. the Americas and Asia. Schedules change by season, so ask reservations for current days and cut-offs.",
     "tags": {
       "freighter": "Freighter",
       "year_round": "Year-round",
@@ -168,7 +175,7 @@
     "roles": {
       "ceo": "CEO",
       "coo": "COO",
-      "revenue": "Revenue and Administration Manager",
+      "revenue": "CFO",
       "sales": "Sales Manager",
       "reservations": "Reservation Manager",
       "finance": "Invoices and statements"
@@ -299,5 +306,11 @@
         ]
       }
     ]
+  },
+  "dhl": {
+    "eyebrow": "Widebody capacity",
+    "title": "Boeing 767 with DHL out of KEF",
+    "text": "We operate with DHL on a Boeing 767 widebody freighter from Keflavík. Its main deck takes larger and heavier shipments than passenger aircraft can, with onward connections through DHL's East Midlands hub to destinations such as Shanghai (PVG), New York (JFK), Brussels (BRU), Dublin (DUB), Madrid (MAD) and Dubai (DWC).",
+    "cta": "Ask about main-deck space"
   }
 }

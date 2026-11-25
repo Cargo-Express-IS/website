@@ -40,7 +40,9 @@
     "lede": "Sex flugfélög frá KEF og eitt teymi hér heima. Við seljum flutningsrými flugfélaga til íslenskra flutningsmiðlara og sendenda og sjáum um AOG-sendingar, hitastýrðar sendingar og verkefnaflutninga.",
     "cta_quote": "Óska eftir tilboði",
     "cta_track": "Rekja sendingu",
-    "map_caption": "Skýringarmynd · tengistöðvar frá KEF og áfram um leiðakerfi hvers flugfélags"
+    "map_caption": "Skýringarmynd · fyrsti viðkomustaður frá KEF (gult) og dæmi um áfangastaði þaðan (blátt)",
+    "map_note": "Þetta eru aðeins nokkrir af áfangastöðum okkar. Sendu okkur fyrirspurn og við finnum leið til að koma sendingunni á leiðarenda.",
+    "map_note_link": "Senda fyrirspurn"
   },
   "track": {
     "title": "Rakning sendinga",
@@ -65,19 +67,24 @@
     "intro": "Aðallega útflutningur frá KEF, auk tollafgreiðslu innflutningssendinga.",
     "items": [
       {
-        "icon": "aog",
-        "title": "AOG allan sólarhringinn",
-        "text": "Við vinnum með flugfélögum, tollinum og afgreiðsluaðilum svo varahlutir í kyrrsettar flugvélar losni hratt, dag sem nótt."
-      },
-      {
         "icon": "temp",
         "title": "Hitastýrðar sendingar",
         "text": "Yfir 4.000 hitastýrðar sendingar afgreiddar fyrir viðskiptavini okkar."
       },
       {
+        "icon": "pharma",
+        "title": "Lyfjasendingar",
+        "text": "Lyfjasendingar skipulagðar með flugfélögum og afgreiðsluaðilum svo kælikeðja og tímasetningar haldist."
+      },
+      {
+        "icon": "aog",
+        "title": "AOG allan sólarhringinn",
+        "text": "Við vinnum með flugfélögum, tollinum og afgreiðsluaðilum svo varahlutir í kyrrsettar flugvélar losni hratt, dag sem nótt."
+      },
+      {
         "icon": "projects",
         "title": "Verkefnaflutningar",
-        "text": "Stór eða tímabundin verkefni skipulögð með flutningsmiðlurum, sama hver stærðin er."
+        "text": "Stór eða tímabundin verkefni skipulögð með flutningsmiðlurum."
       },
       {
         "icon": "customs",
@@ -88,7 +95,7 @@
   },
   "network": {
     "title": "Flugfélögin okkar frá KEF",
-    "intro": "Hvert flugfélag flytur fraktina á sína tengistöð og áfram um eigið leiðakerfi. Áætlanir breytast eftir árstíðum, svo hafðu samband við bókunardeildina um daga og skilafresti hverju sinni.",
+    "intro": "Hvert flugfélag flytur fraktina á sína tengistöð og áfram um eigið leiðakerfi, t.d. til Ameríku og Asíu. Áætlanir breytast eftir árstíðum, svo hafðu samband við bókunardeildina um daga og skilafresti hverju sinni.",
     "tags": {
       "freighter": "Fraktvél",
       "year_round": "Allt árið",
@@ -299,5 +306,11 @@
         ]
       }
     ]
+  },
+  "dhl": {
+    "eyebrow": "Breiðþotupláss",
+    "title": "Boeing 767 með DHL frá KEF",
+    "text": "Við vinnum með DHL á Boeing 767 breiðþotu (fraktvél) frá Keflavík. Á aðalþilfari kemst stærri og þyngri frakt en í farþegavélum, og frá miðstöð DHL í East Midlands eru tengingar til áfangastaða eins og Sjanghæ (PVG), New York (JFK), Brussel (BRU), Dyflinn (DUB), Madríd (MAD) og Dúbaí (DWC).",
+    "cta": "Spyrjast fyrir um pláss á aðalþilfari"
   }
 }

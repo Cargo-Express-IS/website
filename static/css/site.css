@@ -204,9 +204,11 @@ textarea.input { resize: vertical; min-height: 96px; }
 .stat { display: flex; flex-direction: column-reverse; justify-content: flex-end; }
 
 /* ---------- Cards ---------- */
-.cards { display: grid; gap: 20px; grid-template-columns: repeat(4, minmax(0, 1fr)); list-style: none; margin: 0; padding: 0; }
-@media (max-width: 1040px) { .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 560px) { .cards { grid-template-columns: 1fr; } }
+.cards { display: grid; gap: 18px; grid-template-columns: repeat(5, minmax(0, 1fr)); list-style: none; margin: 0; padding: 0; }
+@media (max-width: 1180px) { .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .cards { grid-template-columns: 1fr; } }
+@media (min-width: 1181px) { .card { padding: 22px; } }
 .card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
 .card__icon { width: 44px; height: 44px; border-radius: 10px; background: var(--pale); color: var(--navy); display: grid; place-items: center; margin-bottom: 16px; }
 .card h3 { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
@@ -298,3 +300,21 @@ textarea.input { resize: vertical; min-height: 96px; }
 .footer__title { font-weight: 600; color: var(--white); margin-bottom: 8px; }
 .footer__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
 .footer__bottom { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1E3A5C; font-size: 13px; color: var(--on-navy-dim); }
+
+/* ---------- Hero map note ---------- */
+.hero__legend { margin-top: 10px; font-size: 12px; color: var(--on-navy-dim); }
+.hero__mapnote { margin-top: 10px; font-size: 14px; color: var(--on-navy); }
+.hero__mapnote a { color: var(--yellow); font-weight: 600; white-space: nowrap; }
+.hero__mapnote a:hover { color: #FFD966; }
+
+/* ---------- Feature panel (DHL 767) ---------- */
+.feature {
+  margin-top: 28px; padding: 28px 32px; border-radius: 14px; background: var(--navy); color: var(--white);
+  display: flex; flex-wrap: wrap; gap: 20px 28px; align-items: center;
+}
+.feature__icon { flex: none; width: 60px; height: 60px; border-radius: 14px; background: var(--navy-panel); color: var(--yellow); display: grid; place-items: center; }
+.feature__body { flex: 1 1 420px; min-width: 0; }
+.feature__title { margin-top: 6px; font-family: var(--f-head); font-size: 24px; line-height: 1.2; }
+.feature__text { margin-top: 8px; color: var(--on-navy); max-width: 760px; }
+.feature__cta { flex: 0 1 auto; max-width: 100%; text-align: center; }
+@media (max-width: 520px) { .feature { padding: 22px 20px; } }
