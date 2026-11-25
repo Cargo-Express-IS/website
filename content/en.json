@@ -68,9 +68,9 @@
     "intro": "Mostly export out of KEF, plus clearance for incoming shipments.",
     "items": [
       {
-        "icon": "temp",
-        "title": "Temperature-controlled",
-        "text": "Over 4,000 temperature-controlled shipments handled for our customers."
+        "icon": "fish",
+        "title": "Fresh seafood shipments",
+        "text": "Fresh fish and seafood from Iceland to markets abroad. Over 4,000 temperature-controlled shipments handled for our customers."
       },
       {
         "icon": "pharma",
@@ -97,6 +97,11 @@
         "icon": "customs",
         "title": "Customs clearance",
         "text": "Clearance for incoming shipments, delivery and POD notification."
+      },
+      {
+        "icon": "ddp",
+        "title": "DDP to the UK and Europe",
+        "text": "Delivered Duty Paid (DDP) service to the UK and Continental Europe: import customs, duties and delivery handled, so the consignee receives the goods cleared."
       }
     ]
   },

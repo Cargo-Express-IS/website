@@ -68,9 +68,9 @@
     "intro": "Aðallega útflutningur frá KEF, auk tollafgreiðslu innflutningssendinga.",
     "items": [
       {
-        "icon": "temp",
-        "title": "Hitastýrðar sendingar",
-        "text": "Yfir 4.000 hitastýrðar sendingar afgreiddar fyrir viðskiptavini okkar."
+        "icon": "fish",
+        "title": "Ferskar sjávarafurðir",
+        "text": "Ferskur fiskur og sjávarafurðir frá Íslandi á markaði erlendis. Yfir 4.000 hitastýrðar sendingar afgreiddar fyrir viðskiptavini okkar."
       },
       {
         "icon": "pharma",
@@ -97,6 +97,11 @@
         "icon": "customs",
         "title": "Tollafgreiðsla",
         "text": "Tollafgreiðsla innflutningssendinga, afhending og staðfesting á móttöku (POD)."
+      },
+      {
+        "icon": "ddp",
+        "title": "DDP til Bretlands og Evrópu",
+        "text": "Afhent með greiddum gjöldum (DDP) til Bretlands og meginlands Evrópu: tollafgreiðsla, aðflutningsgjöld og afhending í okkar höndum, svo viðtakandinn fær vöruna tollafgreidda."
       }
     ]
   },
