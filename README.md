@@ -52,5 +52,5 @@ Only a production build served on the real domain can be indexed: Netlify must s
 
 - [ ] Fill every placeholder the build lists (AOG number, kennitala, privacy policy items).
 - [ ] Resolve the `_check` items in `content/site.json` (Finnair tracking link, Air Canada/Norwegian prefixes, name spellings).
-- [ ] **Self-host the fonts** (Inter, Space Grotesk) instead of loading them from Google, so visitors' IP addresses aren't sent to Google. Download the `.woff2` files, put them in `static/fonts/`, add `@font-face` rules to `site.css`, and remove the Google Fonts links in `templates/base.html`.
+- [x] **Fonts are self-hosted** (Inter, Space Grotesk in `static/fonts/`, `@font-face` rules at the top of `site.css`), so no visitor data goes to Google. The site loads nothing from other domains.
 - [ ] Netlify: set the form notification email; add `www.cargoexpress.is` (primary) and `cargoexpress.is`.

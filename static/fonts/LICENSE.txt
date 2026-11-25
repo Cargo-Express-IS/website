@@ -1,0 +1,9 @@
+Fonts in this folder
+
+Inter – Copyright The Inter Project Authors (https://github.com/rsms/inter)
+Space Grotesk – Copyright The Space Grotesk Project Authors (https://github.com/floriankarsten/space-grotesk)
+
+Both are licensed under the SIL Open Font License, Version 1.1:
+https://openfontlicense.org/open-font-license-official-text/
+
+The .woff2 files are the unmodified Latin and Latin Extended subsets served by Google Fonts.

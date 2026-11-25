@@ -1,5 +1,44 @@
 /* Cargo Express – site styles. Colours and type follow the approved blue mockup. */
 
+/* Fonts served from this site (not Google) so visitors' IP addresses aren't sent to third parties.
+   Inter and Space Grotesk, SIL Open Font License 1.1 (see /fonts/LICENSE.txt). Downloaded from Google Fonts 25 Nov 2026. */
+/* Inter, latin-ext */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/inter-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* Inter, latin */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/inter-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Space Grotesk, latin-ext */
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url("/fonts/space-grotesk-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* Space Grotesk, latin */
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url("/fonts/space-grotesk-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 :root {
   --navy: #0B2340;
   --navy-deep: #071A30;
@@ -158,7 +197,7 @@ textarea.input { resize: vertical; min-height: 96px; }
 
 /* ---------- Stats ---------- */
 .stats { padding-top: 56px; }
-.stats__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; margin: 0; }
+.stats__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 24px; margin: 0; }
 .stat { border-top: 3px solid var(--navy); padding-top: 8px; }
 .stat dd { margin: 0; font-family: var(--f-head); font-size: 40px; font-weight: 700; line-height: 1.2; }
 .stat dt { color: var(--muted); font-size: 14px; }
@@ -174,7 +213,7 @@ textarea.input { resize: vertical; min-height: 96px; }
 .card p { color: var(--muted); font-size: 15px; }
 
 /* ---------- Network ---------- */
-.airlines { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); list-style: none; margin: 0; padding: 0; }
+.airlines { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); list-style: none; margin: 0; padding: 0; }
 @media (max-width: 400px) { .airlines { grid-template-columns: 1fr; } }
 .airline { display: flex; gap: 18px; align-items: flex-start; border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; background: #FAFBFC; }
 .airline__hub { flex: 0 0 60px; font-family: var(--f-head); font-weight: 700; font-size: 22px; color: var(--navy); line-height: 1.3; }
@@ -198,7 +237,7 @@ textarea.input { resize: vertical; min-height: 96px; }
 .quote__call p + p { color: var(--muted); }
 .form {
   flex: 2 1 560px; min-width: 0; background: var(--white); border: 1px solid var(--line); border-radius: 14px;
-  padding: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px 20px;
+  padding: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 18px 20px;
 }
 .field { display: flex; flex-direction: column; gap: 6px; }
 .field--full, .form__fieldset, .form__foot { grid-column: 1 / -1; }
@@ -226,7 +265,7 @@ textarea.input { resize: vertical; min-height: 96px; }
 .reps__list .btn { margin-top: 8px; }
 
 /* ---------- Team ---------- */
-.team { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); list-style: none; margin: 0; padding: 0; }
+.team { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); list-style: none; margin: 0; padding: 0; }
 .person { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; display: flex; gap: 14px; align-items: flex-start; }
 .person__avatar { flex: 0 0 48px; height: 48px; border-radius: 50%; background: var(--pale); color: var(--navy); font-weight: 700; display: grid; place-items: center; }
 .person__body { min-width: 0; font-size: 14px; }
