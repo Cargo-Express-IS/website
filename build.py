@@ -4,9 +4,11 @@
     python build.py            build once
     python build.py --serve    build, then serve dist/ at http://localhost:8000
 
-On Netlify the CONTEXT environment variable says which build this is.
-Only CONTEXT=production may be indexed by search engines; every other build
-(local, deploy previews, branch deploys) gets noindex and a blocking robots.txt.
+On Netlify the CONTEXT environment variable says which build this is, and URL
+is the site's main address. Search engines may only index the production build
+served on the real domain (URL == base_url in content/site.json). Every other
+build (local, deploy previews, branch deploys, and production on *.netlify.app
+before the domain is connected) gets noindex and a blocking robots.txt.
 """
 
 import hashlib
@@ -53,8 +55,9 @@ def out_path(url_path):
 
 
 def main():
-    production = os.environ.get("CONTEXT") == "production"
     site = load("site.json")
+    production = (os.environ.get("CONTEXT") == "production"
+                  and os.environ.get("URL", "").rstrip("/") == site["base_url"].rstrip("/"))
     strings = {lang: load(f"{lang}.json") for lang in LANGS}
 
     if DIST.exists():

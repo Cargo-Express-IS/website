@@ -46,7 +46,7 @@ Handled by **Netlify Forms** (`data-netlify="true"`, form name `quote`). Netlify
 
 ## Search engines
 
-Only a build with `CONTEXT=production` (set by Netlify for the live site) can be indexed. Every other build gets `noindex` and a `robots.txt` that blocks everything, so previews never show up on Google.
+Only a production build served on the real domain can be indexed: Netlify must set `CONTEXT=production` **and** `URL` must equal `base_url` in `content/site.json` (`https://www.cargoexpress.is`). Every other build, including production on `website-zoxx.netlify.app` before the domain is connected, gets `noindex` and a `robots.txt` that blocks everything, so previews never show up on Google. When the domain is connected, make `www.cargoexpress.is` the **primary domain** in Netlify so `URL` matches.
 
 ## Before go-live
 
