@@ -65,7 +65,7 @@
   },
   "services": {
     "title": "What we handle",
-    "intro": "Mostly export out of KEF, plus clearance for incoming shipments.",
+    "intro": "Export out of KEF only.",
     "items": [
       {
         "icon": "fish",

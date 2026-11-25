@@ -37,7 +37,7 @@
   "hero": {
     "eyebrow": "Óháður flugfraktumboðsaðili (GSA) · á Íslandi frá 2008",
     "title": "Flugfrakt frá Keflavík til yfir 700 áfangastaða.",
-    "lede": "Sex flugfélög frá KEF. Við seljum flutningsrými flugfélaga til íslenskra flutningsmiðlara og sendenda og sjáum um AOG-sendingar, hitastýrðar sendingar og verkefnaflutninga.",
+    "lede": "Við erum umboðsaðili sex flugfélaga á Íslandi og komum fraktinni þinni frá Keflavík um allan heim, hvort sem það er ferskur fiskur, lyf, varahlutir í flugvélar eða stærri verkefni.",
     "cta_quote": "Óska eftir tilboði",
     "cta_track": "Rekja sendingu",
     "map_caption": "Skýringarmynd · fyrsti viðkomustaður frá KEF (gult) og dæmi um áfangastaði þaðan (blátt)",
@@ -65,7 +65,7 @@
   },
   "services": {
     "title": "Það sem við sjáum um",
-    "intro": "Aðallega útflutningur frá KEF, auk tollafgreiðslu innflutningssendinga.",
+    "intro": "Eingöngu útflutningur frá KEF.",
     "items": [
       {
         "icon": "fish",
