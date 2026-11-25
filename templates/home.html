@@ -77,7 +77,13 @@
           <li class="card">
             <div class="card__icon">{{ icon(s.icon) }}</div>
             <h3>{{ s.title }}</h3>
+            {% if s.get('badge') %}<p class="card__badge">{{ s.badge }}</p>{% endif %}
             <p>{{ s.text }}</p>
+            {% if s.get('list') %}
+            <ul class="card__list">
+              {% for item in s.list %}<li>{{ item }}</li>{% endfor %}
+            </ul>
+            {% endif %}
           </li>
           {% endfor %}
         </ul>

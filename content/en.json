@@ -75,7 +75,13 @@
       {
         "icon": "pharma",
         "title": "Pharma shipments",
-        "text": "Pharmaceutical shipments coordinated with airlines and handlers to keep the cold chain and timing on track."
+        "text": "Pharmaceutical shipments coordinated with airlines and handlers to keep the cold chain and timing on track.",
+        "badge": "CEIV certified through Finnair",
+        "list": [
+          "COL: 2–8 °C",
+          "CRT: 15–25 °C",
+          "FRO: frozen, on dry ice"
+        ]
       },
       {
         "icon": "aog",
