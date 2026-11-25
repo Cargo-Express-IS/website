@@ -122,7 +122,7 @@
       "norwegian": "Oslo, then Norway and Scandinavia."
     },
     "kef_title": "Delivering cargo at KEF",
-    "kef_text": "Deliver to Airport Associates (APA) by the cut-off stated on your booking confirmation."
+    "kef_text": "Cargo is delivered at Keflavík Airport. Contact us for more details on delivery."
   },
   "quote": {
     "title": "Request a quote",
@@ -204,7 +204,7 @@
     "airport_title": "Operating from",
     "airport_lines": [
       "Keflavík Airport (KEF)",
-      "Cargo delivered to APA, Airport Associates"
+      "Contact us for delivery details"
     ],
     "links_title": "Quick links",
     "privacy": "Privacy policy",
