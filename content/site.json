@@ -26,7 +26,7 @@
       "hub": "EMA",
       "tag": "freighter",
       "awb_prefix": "615",
-      "tracking_url": "https://aviationcargo.dhl.com/"
+      "tracking_url": "https://aviationcargo.dhl.com/track/"
     },
     {
       "key": "finnair",
