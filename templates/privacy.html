@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}{{ t.meta.privacy_title }}{% endblock %}
+{% block content %}
+    <article class="page">
+      <div class="wrap page__box">
+        <h1>{{ t.privacy.title }}</h1>
+        {% if t.privacy.get('status') %}
+        <p class="status">{{ t.privacy.status }}</p>
+        {% endif %}
+        <p class="muted">{{ t.privacy.updated }}</p>
+        {% for s in t.privacy.sections %}
+        <h2>{{ s.h }}</h2>
+        {# Each entry is a paragraph (text) or a bullet list (list of texts). #}
+        {% for block in s.p %}
+        {% if block is string %}
+        <p>{{ fill(block) }}</p>
+        {% else %}
+        <ul>
+          {% for item in block %}
+          <li>{{ fill(item) }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+      </div>
+    </article>
+{% endblock %}

@@ -1,0 +1,303 @@
+{
+  "lang": "en",
+  "locale": "en_GB",
+  "lang_name": "English",
+  "other_lang_label": "Íslenska",
+  "paths": {
+    "home": "/en/",
+    "thanks": "/en/thanks/",
+    "privacy": "/en/privacy/"
+  },
+  "meta": {
+    "home_title": "Cargo Express | Air cargo from Iceland",
+    "home_description": "Independent air cargo GSA at Keflavík since 2008. Six airlines out of KEF to 700+ destinations, 24/7 AOG, temperature-controlled and project cargo.",
+    "thanks_title": "Request received | Cargo Express",
+    "privacy_title": "Privacy policy | Cargo Express",
+    "notfound_title": "Page not found | Cargo Express"
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "home": "Cargo Express home",
+    "menu": "Main",
+    "lang": "Language",
+    "new_tab": "(opens in a new tab)"
+  },
+  "topbar": {
+    "aog": "24/7 AOG desk:"
+  },
+  "nav": {
+    "track": "Track",
+    "services": "Services",
+    "network": "Network",
+    "airlines": "For airlines",
+    "team": "Team",
+    "contact": "Contact",
+    "quote": "Request a quote"
+  },
+  "hero": {
+    "eyebrow": "Independent air cargo GSA · Iceland since 2008",
+    "title": "Air cargo from Keflavík to 700+ destinations.",
+    "lede": "Six airlines out of KEF, one local team. We sell airline capacity to Icelandic forwarders and shippers, and handle AOG, temperature-controlled and project cargo.",
+    "cta_quote": "Request a quote",
+    "cta_track": "Track a shipment",
+    "map_caption": "Schematic · gateways from KEF, onward via each airline's network"
+  },
+  "track": {
+    "title": "Track & trace",
+    "intro": "Enter the air waybill number. We pick the airline from the 3-digit prefix and open its tracking page.",
+    "label": "AWB number",
+    "placeholder": "e.g. 657-1234 5675",
+    "button": "Track",
+    "direct": "Or go straight to the airline",
+    "msg_found": "Opening {airline} tracking. Your AWB {awb} is copied, so you can paste it there.",
+    "msg_found_nocopy": "Opening {airline} tracking. Enter AWB {awb} there.",
+    "msg_unknown": "We don't recognise the prefix {prefix}. Pick the airline below.",
+    "msg_invalid": "An AWB number has 11 digits, e.g. 657-1234 5675."
+  },
+  "stats": {
+    "founded": "First independent GSA in Iceland",
+    "destinations": "Destinations served",
+    "temp": "Temperature-controlled shipments",
+    "continents": "Continents covered"
+  },
+  "services": {
+    "title": "What we handle",
+    "intro": "Mostly export out of KEF, plus clearance for incoming shipments.",
+    "items": [
+      {
+        "icon": "aog",
+        "title": "24/7 AOG",
+        "text": "We liaise with airlines, customs and handlers for the fast release of aircraft-on-ground parts, day or night."
+      },
+      {
+        "icon": "temp",
+        "title": "Temperature-controlled",
+        "text": "Over 4,000 temperature-controlled shipments handled for our customers."
+      },
+      {
+        "icon": "projects",
+        "title": "Cargo projects",
+        "text": "Large or time-critical projects scheduled with forwarders, whatever the size."
+      },
+      {
+        "icon": "customs",
+        "title": "Customs clearance",
+        "text": "Clearance for incoming shipments, delivery and POD notification."
+      }
+    ]
+  },
+  "network": {
+    "title": "Our airlines out of KEF",
+    "intro": "Each airline takes cargo to its hub and onward through its own network. Schedules change by season, so ask reservations for current days and cut-offs.",
+    "tags": {
+      "freighter": "Freighter",
+      "year_round": "Year-round",
+      "seasonal": "Seasonal"
+    },
+    "onward": {
+      "dhl": "East Midlands hub, then DHL's global network, e.g. the Americas.",
+      "finnair": "Helsinki, then the Nordics, Baltics and Asia.",
+      "airbaltic": "Riga, then the Baltics and Europe, e.g. Madrid.",
+      "united": "Chicago, then the US and Latin America.",
+      "aircanada": "Toronto / Montréal, then Canada and beyond.",
+      "norwegian": "Oslo, then Norway and Scandinavia."
+    },
+    "kef_title": "Delivering cargo at KEF",
+    "kef_text": "Deliver to Airport Associates (APA) by the cut-off stated on your booking confirmation."
+  },
+  "quote": {
+    "title": "Request a quote",
+    "intro": "Send the shipment details and our reservations team will come back with a rate and routing options.",
+    "points": [
+      "Chargeable weight worked out from your dimensions",
+      "One MAWB with several HAWBs is fine for consolidations",
+      "Space is confirmed once the airline confirms the booking"
+    ],
+    "call_title": "Rather call or email?",
+    "fields": {
+      "company": "Company",
+      "email": "Email",
+      "from": "From",
+      "from_default": "KEF – Keflavík",
+      "to": "To (city or airport)",
+      "to_placeholder": "e.g. MAD, Madrid",
+      "pieces": "Pieces",
+      "dims": "Dimensions per piece (cm)",
+      "dims_placeholder": "L × W × H",
+      "weight": "Total gross weight (kg)",
+      "ready": "Ready date",
+      "commodity": "Commodity",
+      "commodity_placeholder": "What is being shipped?",
+      "special": "Special handling",
+      "temp": "Temperature-controlled",
+      "dg": "Dangerous goods",
+      "aog": "AOG / urgent",
+      "consol": "Consolidation (several HAWBs)",
+      "message": "Anything else",
+      "required": "required"
+    },
+    "privacy_note": "We use these details only to answer your request. See our",
+    "privacy_link": "privacy policy",
+    "submit": "Send request",
+    "goes_to": "Goes to export@cargoexpress.is"
+  },
+  "airlines_section": {
+    "eyebrow": "For airlines",
+    "title": "Your cargo sales team in Iceland",
+    "text": "Since 2008 we have given carriers from North America and Europe access to the Icelandic air cargo market. We sell your capacity to local forwarders and work with handling and customs at KEF on every shipment.",
+    "points": [
+      {
+        "title": "Sales to Icelandic forwarders",
+        "text": "Direct relationships with the local forwarding community."
+      },
+      {
+        "title": "Reservations and booking control",
+        "text": "Quotes, bookings and shipment follow-up handled locally."
+      },
+      {
+        "title": "Handling coordination at KEF",
+        "text": "Liaison with the handling agent and customs."
+      }
+    ],
+    "cta": "Talk to us about representation"
+  },
+  "team": {
+    "title": "Who to contact",
+    "intro": "Industry veterans, and the founders are still in the business.",
+    "finance_name": "Finance & Accounting",
+    "roles": {
+      "ceo": "CEO",
+      "coo": "COO",
+      "revenue": "Revenue and Administration Manager",
+      "sales": "Sales Manager",
+      "reservations": "Reservation Manager",
+      "finance": "Invoices and statements"
+    }
+  },
+  "footer": {
+    "email_title": "Email",
+    "email_labels": {
+      "export": "Export",
+      "import": "Import",
+      "info": "General",
+      "finance": "Invoices"
+    },
+    "airport_title": "Operating from",
+    "airport_lines": [
+      "Keflavík Airport (KEF)",
+      "Cargo delivered to APA, Airport Associates"
+    ],
+    "links_title": "Quick links",
+    "privacy": "Privacy policy",
+    "country": "Iceland"
+  },
+  "thanks": {
+    "title": "Thanks, we've received your request.",
+    "text": "Our reservations team will get back to you. If it's urgent, call us on",
+    "back": "Back to the home page"
+  },
+  "notfound": {
+    "title": "Page not found",
+    "text": "The page you were looking for doesn't exist or has moved.",
+    "back": "Go to the home page"
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "updated": "Last updated: 25 November 2026",
+    "sections": [
+      {
+        "h": "Who we are",
+        "p": [
+          "Cargo Express ehf. (kt. {kennitala}), Ármúli 8a, 108 Reykjavík, Iceland (“Cargo Express”, “we”) is the controller of the personal data described in this policy. We process personal data in line with the Icelandic Act on Data Protection and the Processing of Personal Data, No. 90/2018, and the EU General Data Protection Regulation (GDPR).",
+          "Questions about this policy: {info} or +354 527 0222."
+        ]
+      },
+      {
+        "h": "Who this policy covers",
+        "p": [
+          "Visitors to cargoexpress.is, people who send us a quote request, and contact persons at our customers, airlines, agents and suppliers."
+        ]
+      },
+      {
+        "h": "What we collect",
+        "p": [
+          [
+            "Quote requests: company, email address, shipment details (route, pieces, dimensions, weight, ready date, commodity, special handling) and your message.",
+            "Business contacts: name, company, job title, email address and phone number, and the content of our emails and calls.",
+            "Shipments and invoicing: names and contact details of shippers, consignees and contact persons that appear on air waybills, bookings and invoices.",
+            "Website visits: our hosting provider records technical data such as IP address, browser type and the pages requested, to deliver the website and protect it against abuse."
+          ],
+          "We don't ask for sensitive personal data. Please don't include it in the form."
+        ]
+      },
+      {
+        "h": "Why we use it, and on what legal basis",
+        "p": [
+          [
+            "To answer quote requests and prepare offers: steps taken at your request before entering into a contract (GDPR Art. 6(1)(b)).",
+            "To book, carry out and invoice shipments: performance of a contract (Art. 6(1)(b)).",
+            "To keep accounting records: legal obligation (Art. 6(1)(c)) under the Icelandic Bookkeeping Act, No. 145/1994.",
+            "To stay in touch with business contacts, and to run and secure our website and systems: our legitimate interests (Art. 6(1)(f))."
+          ],
+          "We don't sell personal data, don't use it for advertising, and don't make decisions about you by automated means."
+        ]
+      },
+      {
+        "h": "Who we share it with",
+        "p": [
+          "Only as needed for the purposes above:",
+          [
+            "Airlines, handling agents, customs authorities and overseas agents, to carry out a shipment.",
+            "Service providers who process data on our behalf under data processing agreements: our website host (Netlify), email and office software (Microsoft 365) and our IT service provider (Wise lausnir ehf.).",
+            "Public authorities, when the law requires it."
+          ],
+          "When a shipment goes to a country outside the European Economic Area (EEA), the details needed to deliver it are shared with the airline and agents there, as this is necessary to carry out the contract. Where a service provider processes data outside the EEA, we make sure appropriate safeguards are in place, such as an adequacy decision of the European Commission or its standard contractual clauses."
+        ]
+      },
+      {
+        "h": "How long we keep it",
+        "p": [
+          [
+            "Quote requests that don't lead to a shipment: deleted within 12 months. Form submissions are removed from the website host within 3 months.",
+            "Shipment and invoicing records: 7 years from the end of the financial year, as the Bookkeeping Act requires.",
+            "Business contact details: as long as we work together, and deleted when no longer needed.",
+            "Website technical logs: kept for a limited period by our hosting provider."
+          ]
+        ]
+      },
+      {
+        "h": "Cookies",
+        "p": [
+          "This website doesn't use cookies for tracking or advertising. If we add visitor statistics in the future, we will use a tool that doesn't use cookies or identify individual visitors, and update this policy."
+        ]
+      },
+      {
+        "h": "Security",
+        "p": [
+          "We protect personal data with access controls, secure sign-in and encrypted connections (HTTPS). Only staff who need the data for their work can access it."
+        ]
+      },
+      {
+        "h": "Your rights",
+        "p": [
+          "You have the right to:",
+          [
+            "see the personal data we hold about you and get a copy of it;",
+            "have incorrect data corrected;",
+            "have data deleted when we no longer need it or have no legal basis to keep it;",
+            "have processing restricted in certain cases;",
+            "receive data you gave us in a commonly used format (data portability);",
+            "object to processing based on our legitimate interests."
+          ],
+          "Write to {info}. We reply within one month. If you're not satisfied with our answer, you can complain to Persónuvernd, the Icelandic Data Protection Authority (www.personuvernd.is)."
+        ]
+      },
+      {
+        "h": "Changes to this policy",
+        "p": [
+          "We may update this policy. The current version is always on this page, with the date it was last updated at the top."
+        ]
+      }
+    ]
+  }
+}

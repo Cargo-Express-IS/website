@@ -1,0 +1,7 @@
+# Old Wix page -> section on the new home page
+/services        /#services   301
+/services/       /#services   301
+
+# Short English/Icelandic aliases
+/is              /            301
+/is/*            /:splat      301

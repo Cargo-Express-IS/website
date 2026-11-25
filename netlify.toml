@@ -1,0 +1,24 @@
+# Netlify settings for cargoexpress.is
+# Netlify runs build.py on every push; CONTEXT tells it which kind of build it is.
+
+[build]
+  command = "pip install -r requirements.txt && python build.py"
+  publish = "dist"
+
+[build.environment]
+  PYTHON_VERSION = "3.12"
+
+# Basic security headers for every page
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Long cache for images (CSS and JS carry a version in their URL)
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

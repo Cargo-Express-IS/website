@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}{{ t.meta.thanks_title }}{% endblock %}
+{% block content %}
+    <section class="page">
+      <div class="wrap page__box">
+        <h1>{{ t.thanks.title }}</h1>
+        <p>{{ t.thanks.text }} <a href="tel:{{ site.phone_href }}">{{ site.phone }}</a>.</p>
+        <a class="btn btn--dark" href="{{ t.paths.home }}">{{ t.thanks.back }}</a>
+      </div>
+    </section>
+{% endblock %}

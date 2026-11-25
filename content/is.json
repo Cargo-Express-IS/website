@@ -1,0 +1,303 @@
+{
+  "lang": "is",
+  "locale": "is_IS",
+  "lang_name": "Íslenska",
+  "other_lang_label": "English",
+  "paths": {
+    "home": "/",
+    "thanks": "/takk/",
+    "privacy": "/personuvernd/"
+  },
+  "meta": {
+    "home_title": "Cargo Express | Flugfrakt frá Íslandi",
+    "home_description": "Óháður flugfraktumboðsaðili (GSA) í Keflavík frá 2008. Sex flugfélög frá KEF til yfir 700 áfangastaða, AOG allan sólarhringinn, hitastýrðar sendingar og verkefnaflutningar.",
+    "thanks_title": "Beiðni móttekin | Cargo Express",
+    "privacy_title": "Persónuverndarstefna | Cargo Express",
+    "notfound_title": "Síða fannst ekki | Cargo Express"
+  },
+  "a11y": {
+    "skip": "Fara í efni",
+    "home": "Cargo Express forsíða",
+    "menu": "Aðalvalmynd",
+    "lang": "Tungumál",
+    "new_tab": "(opnast í nýjum flipa)"
+  },
+  "topbar": {
+    "aog": "AOG-vakt allan sólarhringinn:"
+  },
+  "nav": {
+    "track": "Rakning",
+    "services": "Þjónusta",
+    "network": "Leiðakerfi",
+    "airlines": "Fyrir flugfélög",
+    "team": "Starfsfólk",
+    "contact": "Hafa samband",
+    "quote": "Óska eftir tilboði"
+  },
+  "hero": {
+    "eyebrow": "Óháður flugfraktumboðsaðili (GSA) · á Íslandi frá 2008",
+    "title": "Flugfrakt frá Keflavík til yfir 700 áfangastaða.",
+    "lede": "Sex flugfélög frá KEF og eitt teymi hér heima. Við seljum flutningsrými flugfélaga til íslenskra flutningsmiðlara og sendenda og sjáum um AOG-sendingar, hitastýrðar sendingar og verkefnaflutninga.",
+    "cta_quote": "Óska eftir tilboði",
+    "cta_track": "Rekja sendingu",
+    "map_caption": "Skýringarmynd · tengistöðvar frá KEF og áfram um leiðakerfi hvers flugfélags"
+  },
+  "track": {
+    "title": "Rakning sendinga",
+    "intro": "Sláðu inn farmbréfsnúmerið (AWB). Við finnum flugfélagið út frá fyrstu þremur tölunum og opnum rakningarsíðu þess.",
+    "label": "Farmbréfsnúmer (AWB)",
+    "placeholder": "t.d. 657-1234 5675",
+    "button": "Rekja",
+    "direct": "Eða farðu beint á síðu flugfélagsins",
+    "msg_found": "Opna rakningu hjá {airline}. Farmbréfsnúmerið {awb} var afritað svo þú getur límt það inn þar.",
+    "msg_found_nocopy": "Opna rakningu hjá {airline}. Sláðu inn farmbréfsnúmerið {awb} þar.",
+    "msg_unknown": "Við þekkjum ekki forskeytið {prefix}. Veldu flugfélagið hér fyrir neðan.",
+    "msg_invalid": "Farmbréfsnúmer er 11 tölustafir, t.d. 657-1234 5675."
+  },
+  "stats": {
+    "founded": "Fyrsti óháði GSA-aðilinn á Íslandi",
+    "destinations": "Áfangastaðir",
+    "temp": "Hitastýrðar sendingar",
+    "continents": "Heimsálfur"
+  },
+  "services": {
+    "title": "Það sem við sjáum um",
+    "intro": "Aðallega útflutningur frá KEF, auk tollafgreiðslu innflutningssendinga.",
+    "items": [
+      {
+        "icon": "aog",
+        "title": "AOG allan sólarhringinn",
+        "text": "Við vinnum með flugfélögum, tollinum og afgreiðsluaðilum svo varahlutir í kyrrsettar flugvélar losni hratt, dag sem nótt."
+      },
+      {
+        "icon": "temp",
+        "title": "Hitastýrðar sendingar",
+        "text": "Yfir 4.000 hitastýrðar sendingar afgreiddar fyrir viðskiptavini okkar."
+      },
+      {
+        "icon": "projects",
+        "title": "Verkefnaflutningar",
+        "text": "Stór eða tímabundin verkefni skipulögð með flutningsmiðlurum, sama hver stærðin er."
+      },
+      {
+        "icon": "customs",
+        "title": "Tollafgreiðsla",
+        "text": "Tollafgreiðsla innflutningssendinga, afhending og staðfesting á móttöku (POD)."
+      }
+    ]
+  },
+  "network": {
+    "title": "Flugfélögin okkar frá KEF",
+    "intro": "Hvert flugfélag flytur fraktina á sína tengistöð og áfram um eigið leiðakerfi. Áætlanir breytast eftir árstíðum, svo hafðu samband við bókunardeildina um daga og skilafresti hverju sinni.",
+    "tags": {
+      "freighter": "Fraktvél",
+      "year_round": "Allt árið",
+      "seasonal": "Árstíðabundið"
+    },
+    "onward": {
+      "dhl": "Tengistöð í East Midlands og þaðan um alþjóðlegt net DHL, t.d. til Ameríku.",
+      "finnair": "Helsinki og þaðan til Norðurlanda, Eystrasaltsríkja og Asíu.",
+      "airbaltic": "Riga og þaðan til Eystrasaltsríkja og Evrópu, t.d. Madrídar.",
+      "united": "Chicago og þaðan um Bandaríkin og Rómönsku Ameríku.",
+      "aircanada": "Toronto / Montréal og þaðan um Kanada og víðar.",
+      "norwegian": "Osló og þaðan um Noreg og Skandinavíu."
+    },
+    "kef_title": "Afhending í KEF",
+    "kef_text": "Skilaðu sendingunni til Airport Associates (APA) fyrir skilafrestinn sem kemur fram í bókunarstaðfestingunni."
+  },
+  "quote": {
+    "title": "Óska eftir verðtilboði",
+    "intro": "Sendu okkur upplýsingar um sendinguna og bókunardeildin okkar sendir þér verð og leiðarval.",
+    "points": [
+      "Við reiknum greiðsluþyngd út frá málum",
+      "Eitt MAWB með mörgum HAWB er ekkert mál",
+      "Pláss er staðfest þegar flugfélagið staðfestir bókunina"
+    ],
+    "call_title": "Viltu frekar hringja eða senda póst?",
+    "fields": {
+      "company": "Fyrirtæki",
+      "email": "Netfang",
+      "from": "Frá",
+      "from_default": "KEF – Keflavík",
+      "to": "Til (borg eða flugvöllur)",
+      "to_placeholder": "t.d. MAD, Madríd",
+      "pieces": "Fjöldi stykkja",
+      "dims": "Mál á stykki (cm)",
+      "dims_placeholder": "L × B × H",
+      "weight": "Heildarþyngd (kg)",
+      "ready": "Tilbúið til sendingar",
+      "commodity": "Vörulýsing",
+      "commodity_placeholder": "Hvað á að senda?",
+      "special": "Sérmeðhöndlun",
+      "temp": "Hitastýrð sending",
+      "dg": "Hættulegur varningur (DG)",
+      "aog": "AOG / áríðandi",
+      "consol": "Samsending (mörg HAWB)",
+      "message": "Annað sem við ættum að vita",
+      "required": "nauðsynlegt"
+    },
+    "privacy_note": "Við notum þessar upplýsingar eingöngu til að svara beiðninni. Sjá",
+    "privacy_link": "persónuverndarstefnu",
+    "submit": "Senda beiðni",
+    "goes_to": "Fer á export@cargoexpress.is"
+  },
+  "airlines_section": {
+    "eyebrow": "Fyrir flugfélög",
+    "title": "Söluteymið ykkar á Íslandi",
+    "text": "Frá 2008 höfum við veitt flugfélögum frá Norður-Ameríku og Evrópu aðgang að íslenska flugfraktmarkaðnum. Við seljum flutningsrými ykkar til flutningsmiðlara hér á landi og vinnum með afgreiðslu og tolli í KEF við hverja sendingu.",
+    "points": [
+      {
+        "title": "Sala til íslenskra flutningsmiðlara",
+        "text": "Bein tengsl við flutningsmiðlara hér á landi."
+      },
+      {
+        "title": "Bókanir og rýmisstýring",
+        "text": "Tilboð, bókanir og eftirfylgni sendinga hér heima."
+      },
+      {
+        "title": "Samhæfing afgreiðslu í KEF",
+        "text": "Samskipti við afgreiðsluaðila og toll."
+      }
+    ],
+    "cta": "Ræðum umboð"
+  },
+  "team": {
+    "title": "Hafðu samband við okkur",
+    "intro": "Reynslumikið fólk úr greininni, og stofnendurnir starfa enn hjá félaginu.",
+    "finance_name": "Fjármál og bókhald",
+    "roles": {
+      "ceo": "Framkvæmdastjóri",
+      "coo": "Rekstrarstjóri",
+      "revenue": "Tekju- og skrifstofustjóri",
+      "sales": "Sölustjóri",
+      "reservations": "Bókunarstjóri",
+      "finance": "Reikningar og hreyfingalistar"
+    }
+  },
+  "footer": {
+    "email_title": "Netföng",
+    "email_labels": {
+      "export": "Útflutningur",
+      "import": "Innflutningur",
+      "info": "Almennt",
+      "finance": "Reikningar"
+    },
+    "airport_title": "Starfsstöð",
+    "airport_lines": [
+      "Keflavíkurflugvöllur (KEF)",
+      "Frakt afhent hjá APA, Airport Associates"
+    ],
+    "links_title": "Flýtileiðir",
+    "privacy": "Persónuverndarstefna",
+    "country": "Ísland"
+  },
+  "thanks": {
+    "title": "Takk, beiðnin þín er komin til okkar.",
+    "text": "Bókunardeildin okkar hefur samband við þig. Ef málið er áríðandi, hringdu í",
+    "back": "Aftur á forsíðu"
+  },
+  "notfound": {
+    "title": "Síða fannst ekki",
+    "text": "Síðan sem þú leitaðir að er ekki til eða hefur verið færð.",
+    "back": "Fara á forsíðu"
+  },
+  "privacy": {
+    "title": "Persónuverndarstefna",
+    "updated": "Síðast uppfært: 25. nóvember 2026",
+    "sections": [
+      {
+        "h": "Hver við erum",
+        "p": [
+          "Cargo Express ehf. (kt. {kennitala}), Ármúla 8a, 108 Reykjavík („Cargo Express“, „við“) er ábyrgðaraðili þeirra persónuupplýsinga sem fjallað er um í þessari stefnu. Við vinnum persónuupplýsingar í samræmi við lög nr. 90/2018 um persónuvernd og vinnslu persónuupplýsinga og almennu persónuverndarreglugerð ESB (GDPR).",
+          "Spurningar um stefnuna: {info} eða 527 0222."
+        ]
+      },
+      {
+        "h": "Hverja stefnan nær til",
+        "p": [
+          "Gesti á cargoexpress.is, þau sem senda okkur beiðni um verðtilboð og tengiliði hjá viðskiptavinum, flugfélögum, umboðsaðilum og birgjum okkar."
+        ]
+      },
+      {
+        "h": "Hvaða upplýsingum við söfnum",
+        "p": [
+          [
+            "Beiðnir um verðtilboð: fyrirtæki, netfang, upplýsingar um sendinguna (leið, fjöldi stykkja, mál, þyngd, dagsetning, vörulýsing, sérmeðhöndlun) og skilaboð.",
+            "Viðskiptatengiliðir: nafn, fyrirtæki, starfsheiti, netfang og símanúmer, ásamt efni tölvupósta og símtala.",
+            "Sendingar og reikningar: nöfn og samskiptaupplýsingar sendenda, viðtakenda og tengiliða sem koma fram á farmbréfum, bókunum og reikningum.",
+            "Heimsóknir á vefinn: hýsingaraðili okkar skráir tæknilegar upplýsingar, svo sem IP-tölu, tegund vafra og þær síður sem eru skoðaðar, til að birta vefinn og verja hann gegn misnotkun."
+          ],
+          "Við óskum ekki eftir viðkvæmum persónuupplýsingum. Vinsamlegast settu þær ekki í formið."
+        ]
+      },
+      {
+        "h": "Til hvers við notum upplýsingarnar og á hvaða grundvelli",
+        "p": [
+          [
+            "Til að svara beiðnum um verðtilboð: ráðstafanir að beiðni þinni áður en samningur er gerður (b-liður 1. mgr. 6. gr. GDPR).",
+            "Til að bóka, framkvæma og reikningsfæra sendingar: efndir samnings (b-liður 1. mgr. 6. gr.).",
+            "Til að halda bókhald: lagaskylda (c-liður 1. mgr. 6. gr.) samkvæmt lögum nr. 145/1994 um bókhald.",
+            "Til að halda sambandi við viðskiptatengiliði og reka og verja vefinn og kerfin okkar: lögmætir hagsmunir okkar (f-liður 1. mgr. 6. gr.)."
+          ],
+          "Við seljum ekki persónuupplýsingar, notum þær ekki í auglýsingaskyni og tökum engar sjálfvirkar ákvarðanir um þig."
+        ]
+      },
+      {
+        "h": "Hverjum við miðlum upplýsingum",
+        "p": [
+          "Aðeins að því marki sem þarf í framangreindum tilgangi:",
+          [
+            "Flugfélögum, afgreiðsluaðilum, tollyfirvöldum og erlendum umboðsaðilum, til að framkvæma sendingu.",
+            "Þjónustuaðilum sem vinna upplýsingar fyrir okkar hönd samkvæmt vinnslusamningum: hýsingaraðila vefsins (Netlify), tölvupósti og skrifstofuhugbúnaði (Microsoft 365) og tölvuþjónustu okkar (Wise lausnir ehf.).",
+            "Opinberum aðilum, þegar lög krefjast þess."
+          ],
+          "Þegar sending fer til lands utan Evrópska efnahagssvæðisins (EES) fá flugfélagið og umboðsaðilar þar þær upplýsingar sem þarf til að afhenda hana, enda er það nauðsynlegt til að efna samninginn. Ef þjónustuaðili vinnur upplýsingar utan EES tryggjum við að viðeigandi verndarráðstafanir séu til staðar, svo sem ákvörðun framkvæmdastjórnar ESB um fullnægjandi vernd eða stöðluð samningsákvæði hennar."
+        ]
+      },
+      {
+        "h": "Hversu lengi við geymum upplýsingarnar",
+        "p": [
+          [
+            "Beiðnir um verðtilboð sem leiða ekki til sendingar: eytt innan 12 mánaða. Innsendum beiðnum er eytt hjá hýsingaraðila vefsins innan 3 mánaða.",
+            "Gögn um sendingar og reikninga: 7 ár frá lokum reikningsárs, eins og bókhaldslög krefjast.",
+            "Upplýsingar um viðskiptatengiliði: á meðan viðskiptin standa og eytt þegar þeirra er ekki lengur þörf.",
+            "Tæknilegar skrár vefsins: geymdar í takmarkaðan tíma hjá hýsingaraðila."
+          ]
+        ]
+      },
+      {
+        "h": "Vafrakökur",
+        "p": [
+          "Vefurinn notar hvorki vafrakökur til rakningar né í auglýsingaskyni. Ef við bætum við heimsóknatölfræði síðar notum við lausn sem notar ekki vafrakökur og greinir ekki einstaka gesti, og uppfærum þessa stefnu."
+        ]
+      },
+      {
+        "h": "Öryggi",
+        "p": [
+          "Við verjum persónuupplýsingar með aðgangsstýringum, öruggri innskráningu og dulkóðuðum tengingum (HTTPS). Aðeins starfsfólk sem þarf upplýsingarnar starfs síns vegna hefur aðgang að þeim."
+        ]
+      },
+      {
+        "h": "Réttindi þín",
+        "p": [
+          "Þú átt rétt á að:",
+          [
+            "fá að vita hvaða persónuupplýsingar við höfum um þig og fá afrit af þeim;",
+            "fá rangar upplýsingar leiðréttar;",
+            "fá upplýsingum eytt þegar við þurfum þær ekki lengur eða höfum ekki lagagrundvöll til að geyma þær;",
+            "fá vinnslu takmarkaða í ákveðnum tilvikum;",
+            "fá upplýsingar sem þú lést okkur í té á algengu tölvutæku formi (flutningsréttur);",
+            "andmæla vinnslu sem byggir á lögmætum hagsmunum okkar."
+          ],
+          "Skrifaðu á {info}. Við svörum innan mánaðar. Ef þú ert ekki sátt(ur) við svarið getur þú lagt fram kvörtun hjá Persónuvernd (www.personuvernd.is)."
+        ]
+      },
+      {
+        "h": "Breytingar á stefnunni",
+        "p": [
+          "Við kunnum að uppfæra þessa stefnu. Gildandi útgáfa er alltaf á þessari síðu, með dagsetningu síðustu uppfærslu efst."
+        ]
+      }
+    ]
+  }
+}

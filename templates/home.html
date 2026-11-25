@@ -1,0 +1,239 @@
+{% extends "base.html" %}
+{% from "icons.html" import icon %}
+
+{% block content %}
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">{{ t.hero.eyebrow }}</p>
+          <h1 id="hero-title">{{ t.hero.title }}</h1>
+          <p class="hero__lede">{{ t.hero.lede }}</p>
+          <div class="hero__ctas">
+            <a class="btn btn--primary btn--lg" href="#quote">{{ t.hero.cta_quote }}</a>
+            <a class="btn btn--outline-light btn--lg" href="#track">{{ t.hero.cta_track }}</a>
+          </div>
+        </div>
+        <div class="hero__art">
+          {% include "map.svg" %}
+        </div>
+      </div>
+    </section>
+
+    <!-- Track & trace -->
+    <section class="track-wrap" id="track" aria-labelledby="track-title">
+      <div class="track">
+        <div class="track__main">
+          <h2 id="track-title">{{ t.track.title }}</h2>
+          <p class="track__intro" id="track-intro">{{ t.track.intro }}</p>
+          <form class="track__form" id="track-form" novalidate
+                data-msg-found="{{ t.track.msg_found }}"
+                data-msg-found-nocopy="{{ t.track.msg_found_nocopy }}"
+                data-msg-unknown="{{ t.track.msg_unknown }}"
+                data-msg-invalid="{{ t.track.msg_invalid }}">
+            <label class="sr-only" for="awb">{{ t.track.label }}</label>
+            <input class="input" id="awb" name="awb" type="text" inputmode="numeric" autocomplete="off"
+                   placeholder="{{ t.track.placeholder }}" aria-describedby="track-intro track-msg">
+            <button class="btn btn--dark" type="submit">{{ t.track.button }}</button>
+          </form>
+          <p class="track__msg" id="track-msg" role="status" aria-live="polite"></p>
+        </div>
+        <div class="track__links">
+          <p class="track__label">{{ t.track.direct }}</p>
+          <ul class="pills">
+            {% for a in site.airlines %}
+            <li><a class="pill" href="{{ a.tracking_url }}" target="_blank" rel="noopener">{{ a.name }} {{ icon('external', 14) }}<span class="sr-only">{{ t.a11y.new_tab }}</span></a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key figures -->
+    <section class="stats" aria-label="Cargo Express">
+      <div class="wrap">
+        <dl class="stats__grid">
+          {% for s in site.stats %}
+          <div class="stat">
+            <dt>{{ t.stats[s.key] }}</dt>
+            <dd>{{ s.get('value_is', s.value) if lang == 'is' else s.value }}</dd>
+          </div>
+          {% endfor %}
+        </dl>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="h2" id="services-title">{{ t.services.title }}</h2>
+          <p class="intro">{{ t.services.intro }}</p>
+        </div>
+        <ul class="cards">
+          {% for s in t.services["items"] %}
+          <li class="card">
+            <div class="card__icon">{{ icon(s.icon) }}</div>
+            <h3>{{ s.title }}</h3>
+            <p>{{ s.text }}</p>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+
+    <!-- Network -->
+    <section class="section section--white" id="network" aria-labelledby="network-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="h2" id="network-title">{{ t.network.title }}</h2>
+          <p class="intro">{{ t.network.intro }}</p>
+        </div>
+        <ul class="airlines">
+          {% for a in site.airlines %}
+          <li class="airline">
+            <span class="airline__hub">{{ a.hub }}</span>
+            <div>
+              <div class="airline__head">
+                <span class="airline__name">{{ a.name }}</span>
+                <span class="tag">{{ t.network.tags[a.tag] }}</span>
+              </div>
+              <p>{{ t.network.onward[a.key] }}</p>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+        <div class="note">
+          {{ icon('pin') }}
+          <strong>{{ t.network.kef_title }}</strong>
+          <span>{{ t.network.kef_text }}</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="section" id="quote" aria-labelledby="quote-title">
+      <div class="wrap quote">
+        <div class="quote__aside">
+          <h2 class="h2" id="quote-title">{{ t.quote.title }}</h2>
+          <p class="intro">{{ t.quote.intro }}</p>
+          <ul class="ticks">
+            {% for p in t.quote.points %}
+            <li>{{ icon('check', 20) }}<span>{{ p }}</span></li>
+            {% endfor %}
+          </ul>
+          <div class="quote__call">
+            <p>{{ t.quote.call_title }}</p>
+            <p><a href="tel:{{ site.phone_href }}">{{ site.phone }}</a> · <a href="mailto:{{ site.emails.export }}">{{ site.emails.export }}</a></p>
+          </div>
+        </div>
+
+        {% set f = t.quote.fields %}
+        <form class="form" name="quote" method="POST" action="{{ t.paths.thanks }}"
+              data-netlify="true" netlify-honeypot="company_website">
+          <input type="hidden" name="form-name" value="quote">
+          <input type="hidden" name="language" value="{{ lang }}">
+          <p class="hp" aria-hidden="true"><label>Website <input name="company_website" tabindex="-1" autocomplete="off"></label></p>
+
+          <div class="field">
+            <label for="q-company">{{ f.company }} <span class="req">({{ f.required }})</span></label>
+            <input class="input" id="q-company" name="company" type="text" autocomplete="organization" required>
+          </div>
+          <div class="field">
+            <label for="q-email">{{ f.email }} <span class="req">({{ f.required }})</span></label>
+            <input class="input" id="q-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="q-from">{{ f.from }}</label>
+            <input class="input" id="q-from" name="from" type="text" value="{{ f.from_default }}">
+          </div>
+          <div class="field">
+            <label for="q-to">{{ f.to }} <span class="req">({{ f.required }})</span></label>
+            <input class="input" id="q-to" name="to" type="text" placeholder="{{ f.to_placeholder }}" required>
+          </div>
+          <div class="field">
+            <label for="q-pieces">{{ f.pieces }}</label>
+            <input class="input" id="q-pieces" name="pieces" type="number" min="1" inputmode="numeric">
+          </div>
+          <div class="field">
+            <label for="q-dims">{{ f.dims }}</label>
+            <input class="input" id="q-dims" name="dimensions" type="text" placeholder="{{ f.dims_placeholder }}">
+          </div>
+          <div class="field">
+            <label for="q-weight">{{ f.weight }}</label>
+            <input class="input" id="q-weight" name="gross_weight_kg" type="number" min="0" step="any" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="q-ready">{{ f.ready }}</label>
+            <input class="input" id="q-ready" name="ready_date" type="date">
+          </div>
+          <div class="field field--full">
+            <label for="q-commodity">{{ f.commodity }}</label>
+            <input class="input" id="q-commodity" name="commodity" type="text" placeholder="{{ f.commodity_placeholder }}">
+          </div>
+          <fieldset class="form__fieldset">
+            <legend>{{ f.special }}</legend>
+            <div class="checks">
+              <label><input type="checkbox" name="temperature_controlled" value="yes">{{ f.temp }}</label>
+              <label><input type="checkbox" name="dangerous_goods" value="yes">{{ f.dg }}</label>
+              <label><input type="checkbox" name="aog_urgent" value="yes">{{ f.aog }}</label>
+              <label><input type="checkbox" name="consolidation" value="yes">{{ f.consol }}</label>
+            </div>
+          </fieldset>
+          <div class="field field--full">
+            <label for="q-message">{{ f.message }}</label>
+            <textarea class="input" id="q-message" name="message" rows="3"></textarea>
+          </div>
+          <div class="form__foot">
+            <p class="form__small">{{ t.quote.goes_to }}. {{ t.quote.privacy_note }} <a href="{{ t.paths.privacy }}">{{ t.quote.privacy_link }}</a>.</p>
+            <button class="btn btn--primary btn--lg" type="submit">{{ t.quote.submit }}</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- For airlines -->
+    <section class="section section--navy" id="airlines" aria-labelledby="airlines-title">
+      <div class="wrap reps">
+        <div class="reps__text">
+          <p class="eyebrow">{{ t.airlines_section.eyebrow }}</p>
+          <h2 class="h2" id="airlines-title">{{ t.airlines_section.title }}</h2>
+          <p class="lead">{{ t.airlines_section.text }}</p>
+        </div>
+        <div class="reps__list">
+          {% for p in t.airlines_section.points %}
+          <div class="rep"><strong>{{ p.title }}</strong><span>{{ p.text }}</span></div>
+          {% endfor %}
+          <a class="btn btn--primary" href="mailto:{{ site.emails.representation }}">{{ t.airlines_section.cta }}</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section" id="team" aria-labelledby="team-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="h2" id="team-title">{{ t.team.title }}</h2>
+          <p class="intro">{{ t.team.intro }}</p>
+        </div>
+        <ul class="team">
+          {% for m in site.team %}
+          <li class="person">
+            <span class="person__avatar" aria-hidden="true">{{ m.initials }}</span>
+            <div class="person__body">
+              <p class="person__name">{{ t.team[m.name_key] if 'name_key' in m else m.name }}</p>
+              <p class="person__role">{{ t.team.roles[m.role] }}</p>
+              <a href="mailto:{{ m.email }}">{{ m.email }}</a>
+              <p class="person__phone"><a href="tel:{{ m.phone|replace(' ', '') }}">{{ m.phone }}</a></p>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+{% endblock %}
+
+{% block scripts %}
+  <script type="application/json" id="awb-prefixes">{{ prefixes|tojson }}</script>
+  <script src="{{ assets.js }}" defer></script>
+{% endblock %}

@@ -1,0 +1,137 @@
+{% from "icons.html" import icon %}
+{% set home = '' if page == 'home' else t.paths.home %}
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ t.meta.home_title }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ t.meta.home_description }}{% endblock %}">
+  {% if not production %}
+  <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  <link rel="canonical" href="{{ url }}">
+  {% for l, href in alternates.items() %}
+  <link rel="alternate" hreflang="{{ l }}" href="{{ href }}">
+  {% endfor %}
+  {% if alternates %}
+  <link rel="alternate" hreflang="x-default" href="{{ alternates['is'] }}">
+  {% endif %}
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cargo Express">
+  <meta property="og:title" content="{{ self.title() }}">
+  <meta property="og:description" content="{{ self.description() }}">
+  <meta property="og:url" content="{{ url }}">
+  <meta property="og:image" content="{{ site.base_url }}/img/og-image.png">
+  <meta property="og:locale" content="{{ t.locale }}">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#0B2340">
+
+  {# TODO before go-live: self-host these fonts (privacy), see README #}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="{{ assets.css }}">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Cargo Express ehf.",
+    "url": "{{ site.base_url }}",
+    "logo": "{{ site.base_url }}/img/icon-512.png",
+    "telephone": "{{ site.phone }}",
+    "email": "{{ site.emails.info }}",
+    "address": { "@type": "PostalAddress", "streetAddress": "Ármúli 8a", "postalCode": "108", "addressLocality": "Reykjavík", "addressCountry": "IS" },
+    "sameAs": ["{{ site.linkedin }}"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">{{ t.a11y.skip }}</a>
+
+  <div class="topbar">
+    <div class="wrap topbar__inner">
+      {# The AOG line only shows once content/site.json has an aog_phone. #}
+      {% if site.aog_phone %}
+      <p class="topbar__aog">{{ t.topbar.aog }}
+        <a href="tel:{{ site.aog_phone_href or site.aog_phone|replace(' ', '') }}"><strong>{{ site.aog_phone }}</strong></a>
+      </p>
+      {% else %}
+      <span></span>
+      {% endif %}
+      <div class="topbar__right">
+        <a href="mailto:{{ site.emails.export }}">{{ site.emails.export }}</a>
+        <a href="tel:{{ site.phone_href }}">{{ site.phone }}</a>
+        <nav class="langswitch" aria-label="{{ t.a11y.lang }}">
+          {% for l in ['is', 'en'] %}
+            {% if l == lang %}
+            <span class="langswitch__item is-active" aria-current="true">{{ l|upper }}</span>
+            {% else %}
+            <a class="langswitch__item" href="{{ other_url }}" hreflang="{{ l }}" lang="{{ l }}">{{ l|upper }}</a>
+            {% endif %}
+          {% endfor %}
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="wrap header__inner">
+      <a class="header__logo" href="{{ t.paths.home }}" aria-label="{{ t.a11y.home }}">
+        <img src="/img/logo.png" alt="Cargo Express" width="554" height="174">
+      </a>
+      <nav class="mainnav" aria-label="{{ t.a11y.menu }}">
+        <a href="{{ home }}#track">{{ t.nav.track }}</a>
+        <a href="{{ home }}#services">{{ t.nav.services }}</a>
+        <a href="{{ home }}#network">{{ t.nav.network }}</a>
+        <a href="{{ home }}#airlines">{{ t.nav.airlines }}</a>
+        <a href="{{ home }}#team">{{ t.nav.team }}</a>
+        <a href="{{ home }}#contact">{{ t.nav.contact }}</a>
+      </nav>
+      <a class="btn btn--primary header__cta" href="{{ home }}#quote">{{ t.nav.quote }}</a>
+    </div>
+  </header>
+
+  <main id="main">
+{% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="wrap footer__grid">
+      <div>
+        <p class="footer__name">Cargo Express</p>
+        <p>{{ site.address[0] }}<br>{{ site.address[1] }}, {{ t.footer.country }}</p>
+        <p><a href="tel:{{ site.phone_href }}">{{ site.phone }}</a></p>
+      </div>
+      <div>
+        <p class="footer__title">{{ t.footer.email_title }}</p>
+        <ul class="footer__list">
+          {% for key in ['export', 'import', 'info', 'finance'] %}
+          <li>{{ t.footer.email_labels[key] }}: <a href="mailto:{{ site.emails[key] }}">{{ site.emails[key] }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div>
+        <p class="footer__title">{{ t.footer.airport_title }}</p>
+        <p>{% for line in t.footer.airport_lines %}{{ line }}{% if not loop.last %}<br>{% endif %}{% endfor %}</p>
+      </div>
+      <div>
+        <p class="footer__title">{{ t.footer.links_title }}</p>
+        <ul class="footer__list">
+          <li><a href="{{ home }}#track">{{ t.track.title }}</a></li>
+          <li><a href="{{ home }}#quote">{{ t.nav.quote }}</a></li>
+          <li><a href="{{ home }}#airlines">{{ t.nav.airlines }}</a></li>
+          <li><a href="{{ t.paths.privacy }}">{{ t.footer.privacy }}</a></li>
+          <li><a href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn <span class="sr-only">{{ t.a11y.new_tab }}</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer__bottom">© {{ year }} {{ site.company }} · kt. {{ site.kennitala }}</div>
+  </footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>

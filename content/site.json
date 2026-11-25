@@ -1,0 +1,142 @@
+{
+  "_note": "Shared facts for both languages. Text in [BRACKETS] is a placeholder that must be filled in before go-live; build.py lists any that remain.",
+  "base_url": "https://www.cargoexpress.is",
+  "company": "Cargo Express ehf.",
+  "kennitala": "410208-3180",
+  "address": [
+    "Ármúli 8a",
+    "108 Reykjavík"
+  ],
+  "phone": "+354 527 0222",
+  "phone_href": "+3545270222",
+  "aog_phone": "",
+  "aog_phone_href": "",
+  "emails": {
+    "export": "export@cargoexpress.is",
+    "import": "import@cargoexpress.is",
+    "info": "info@cargoexpress.is",
+    "finance": "finance@cargoexpress.is",
+    "representation": "robert@cargoexpress.is"
+  },
+  "linkedin": "https://www.linkedin.com/company/cargo-express/",
+  "airlines": [
+    {
+      "key": "dhl",
+      "name": "DHL",
+      "hub": "EMA",
+      "tag": "freighter",
+      "awb_prefix": "615",
+      "tracking_url": "https://aviationcargo.dhl.com/"
+    },
+    {
+      "key": "finnair",
+      "name": "Finnair",
+      "hub": "HEL",
+      "tag": "year_round",
+      "awb_prefix": "105",
+      "tracking_url": "https://cargo.finnair.com/api/offerandorder/#/home/find-offer"
+    },
+    {
+      "key": "airbaltic",
+      "name": "airBaltic",
+      "hub": "RIX",
+      "tag": "year_round",
+      "awb_prefix": "657",
+      "tracking_url": "https://www.airbaltic.com/en/cargo/online-services"
+    },
+    {
+      "key": "united",
+      "name": "United",
+      "hub": "ORD",
+      "tag": "seasonal",
+      "awb_prefix": "016",
+      "tracking_url": "https://www.unitedcargo.com/en/us/track/"
+    },
+    {
+      "key": "aircanada",
+      "name": "Air Canada",
+      "hub": "YYZ",
+      "tag": "seasonal",
+      "awb_prefix": "014",
+      "tracking_url": "https://www.aircanada.com/cargo/tracking"
+    },
+    {
+      "key": "norwegian",
+      "name": "Norwegian",
+      "hub": "OSL",
+      "tag": "seasonal",
+      "awb_prefix": "328",
+      "tracking_url": "https://www.norwegiancargo.com/"
+    }
+  ],
+  "stats": [
+    {
+      "key": "founded",
+      "value": "2008"
+    },
+    {
+      "key": "destinations",
+      "value": "700+"
+    },
+    {
+      "key": "temp",
+      "value": "4,000+",
+      "value_is": "4.000+"
+    },
+    {
+      "key": "continents",
+      "value": "6"
+    }
+  ],
+  "team": [
+    {
+      "initials": "RT",
+      "name": "Róbert Tómasson",
+      "role": "ceo",
+      "email": "robert@cargoexpress.is",
+      "phone": "+354 527 0223"
+    },
+    {
+      "initials": "RB",
+      "name": "Robert Bergmann Robertsson",
+      "role": "coo",
+      "email": "robertb@cargoexpress.is",
+      "phone": "+354 527 0224"
+    },
+    {
+      "initials": "SG",
+      "name": "Sóley Gústafsdóttir",
+      "role": "revenue",
+      "email": "soley@cargoexpress.is",
+      "phone": "+354 527 0226"
+    },
+    {
+      "initials": "AG",
+      "name": "Andri Ragnars Guðjohnsen",
+      "role": "sales",
+      "email": "andri@cargoexpress.is",
+      "phone": "+354 527 0225"
+    },
+    {
+      "initials": "EK",
+      "name": "Erla Björk Kristjánsdóttir",
+      "role": "reservations",
+      "email": "erla@cargoexpress.is",
+      "phone": "+354 527 0227"
+    },
+    {
+      "initials": "HR",
+      "name": "Halldóra Ósk Reynisdóttir",
+      "role": "reservations",
+      "email": "halldora@cargoexpress.is",
+      "phone": "+354 527 0222"
+    },
+    {
+      "initials": "FA",
+      "name_key": "finance_name",
+      "role": "finance",
+      "email": "finance@cargoexpress.is",
+      "phone": "+354 527 0222"
+    }
+  ]
+}

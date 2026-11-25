@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}{{ t.meta.notfound_title }}{% endblock %}
+{% block content %}
+    <section class="page">
+      <div class="wrap page__box">
+        <h1>{{ t.notfound.title }}</h1>
+        <p>{{ t.notfound.text }}</p>
+        <a class="btn btn--dark" href="{{ t.paths.home }}">{{ t.notfound.back }}</a>
+
+        <div lang="en">
+          <h2>{{ t_en.notfound.title }}</h2>
+          <p>{{ t_en.notfound.text }}</p>
+          <p><a href="{{ t_en.paths.home }}">{{ t_en.notfound.back }}</a></p>
+        </div>
+      </div>
+    </section>
+{% endblock %}
